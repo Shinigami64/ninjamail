@@ -1,0 +1,116 @@
+@mixin footer {
+        width: 80%;
+        height: 50vh;
+        margin: auto;
+        font-family: $fffooter;
+
+        #foot_global{
+            height: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+            #plogo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 20%;
+                height: 20%;
+                display: flex;
+                .logo{
+                    @include logo;
+                    align-items: flex-start;
+                }
+                comp{
+                    .bighdeux{
+                        @include bighdeTiblac;
+                        font-size: 26px;
+                        width: 80%;
+                    }
+                }
+            }
+            #link{
+                width: 40%;
+                display: flex;
+                justify-content: space-between;
+                #services{
+                    width: 10%;
+                    height: 80;
+                    ul{
+                        li{
+                            @include nopuce;
+                            a{
+                                @include nsoul;
+                                color: $cpblack;
+                                font-size: 19px;
+                            }
+                        }
+                    }
+                }
+                #support{
+                    width: 10%;
+                    height: 80;
+                    ul{
+                        li{
+                            @include nopuce;
+                            a{
+                                @include nsoul;
+                                color: $cpblack;
+                            }
+                        }
+                    }
+                }
+                #reseau{
+                    width: 10%;
+                    height: 80;
+                    ul{
+                        li{
+                            @include nopuce;
+                            a{
+                                @include nsoul;
+                                color: $cpblack;
+                            }
+                        }
+                    }
+                }
+
+                #social{
+                    width: 10%;
+                    height: 80;
+                    ul{
+                        li{
+                            @include nopuce;
+                            a{
+                                @include nsoul;
+                                color: $cpblack;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #legal{
+            width: 80%;
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            #copy{
+                font-size: 15px;
+            }
+            #condit{
+                a{
+                    @include nsoul;
+                    color: $cpblack;
+                    font-size: 15px;
+                }
+            }
+            #private{
+                a{
+                    @include nsoul;
+                    color: $cpblack;
+                    font-size: 15px;
+                }
+            }
+        }
+}

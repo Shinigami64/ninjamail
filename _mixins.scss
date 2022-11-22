@@ -1,0 +1,63 @@
+@mixin logo{
+    color: $cpblack;
+    font-family: $flogo;
+    // width: 129px;
+    // height: 64.5px;
+    display: block;
+    padding: 0;
+    // margin: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-image: url(./assets/mail.png);
+    // background-image: url(./assets/mail.webp);
+}
+
+@mixin navbar {
+    color: $cpblack;
+    font-family: $fnav;
+    font-size: 11px;
+}
+
+@mixin butgreen {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@mixin butwhi {
+    background-color: $ctwhite;
+    color: $csgreen;
+    font-family: $fbut;
+    border: 2px solid $csgreen;
+    padding: 0.55vh 0.55vw;
+}
+
+@mixin bighdeTiblac {
+    color: $cpblack;
+    font-family: $ftitre;
+}
+
+@mixin bighdeTiblan {
+    color: $ctwhite;
+    font-family: $ftitre;
+
+}
+
+@mixin para {
+    color: $cpblack;
+    font-family: $fpara;
+}
+
+/* supprimer soulignage */ 
+@mixin nsoul {
+        text-decoration: none;
+}
+
+/* supprimer puces */ 
+@mixin nopuce {
+    list-style-type: none; 
+}

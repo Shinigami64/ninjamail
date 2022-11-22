@@ -1,0 +1,728 @@
+/* couleur primaire => Noir*/
+/* couleur secondaire => Verte*/
+/* couleur tertiaire => Blanc*/
+/* Partie Navi*/
+/* couleur "nav" */
+/* Partie Polices*/
+/* Polices des "titres"*/
+/* Police des "logos"*/
+/* Police du "nav" */
+/* Police des paragraphe*/
+/* Police des boutons*/
+/* Police des Noms*/
+/* Police des from*/
+/* Police des footer*/
+/* Box_shadow */
+/* Text Shadow*/
+/* supprimer soulignage */
+/* supprimer puces */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+body header {
+  align-items: center;
+  width: 80%;
+  height: 20%;
+  margin: auto;
+  justify-content: space-around;
+  display: flex;
+}
+body header .titre {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+body header .titre .logo {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  display: block;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body header .titre .logo img {
+  width: 100%;
+}
+body header .titre .comp {
+  color: #000000;
+  font-family: "Playfair Display", sans-serif;
+  width: 70%;
+}
+body header .titre .comp h1 {
+  width: 100%;
+}
+body header .navi {
+  width: 80%;
+}
+body header .navi nav ul {
+  width: 60%;
+  display: flex;
+  margin-left: 40%;
+  justify-content: space-around;
+}
+body header .navi nav ul li {
+  list-style-type: none;
+}
+body header .navi nav ul li a {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  text-decoration: none;
+}
+body header .navi nav ul li span {
+  position: relative;
+}
+body header .navi nav ul li span::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #4BA87D;
+  transform-origin: center;
+  transform: translate(-50%, 0) scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+body header .navi nav ul li span:hover::before {
+  transform: translate(-50%, 0) scaleX(1);
+}
+body header .sign {
+  width: 10%;
+  height: 20%;
+}
+body header .sign button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+body #hero {
+  margin-top: 0;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+body #hero #cont_titre_para {
+  width: 30vw;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+  top: 35%;
+  left: 7%;
+}
+body #hero #cont_titre_para .bighdeux {
+  color: #000000;
+  font-family: "Playfair Display", sans-serif;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  margin-top: -16%;
+  font-size: 59px;
+}
+body #hero #cont_titre_para .para {
+  width: 90%;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 19px;
+  margin: 0;
+}
+body #hero #cont_titre_para #button_co_ni_one {
+  width: 80%;
+  display: flex;
+  text-align: center;
+  font-size: 19px;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+body #hero #cont_titre_para #button_co_ni_one .green_but .try {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 21px;
+  padding: 2vh 2vw;
+}
+body #hero #cont_titre_para #button_co_ni_one .white_but .get {
+  background-color: #FFFFFF;
+  color: #4BA87D;
+  font-family: "Raleway", sans-serif;
+  border: 2px solid #4BA87D;
+  padding: 0.55vh 0.55vw;
+  font-size: 21px;
+  padding: 2vh 2vw;
+}
+body #hero #phero {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  background-image: url(./assets/hero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  margin-top: 5%;
+  margin-left: -5%;
+}
+body #hero #phero img {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 99;
+}
+body #video {
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+  background-size: cover;
+}
+body #video #media {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+body #video #media #move {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  text-align: center;
+}
+body #video #media #move img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+body #video #media .bighdeux {
+  width: 70%;
+  color: #FFFFFF;
+  font-family: "Playfair Display", sans-serif;
+  margin: auto;
+  font-size: 35px;
+  position: absolute;
+  z-index: 2;
+  top: 37%;
+  left: 25%;
+}
+body #video #media .learho {
+  background-color: #FFFFFF;
+  color: #4BA87D;
+  font-family: "Raleway", sans-serif;
+  border: 2px solid #4BA87D;
+  padding: 0.55vh 0.55vw;
+  border-color: #FFFFFF;
+  margin: auto;
+  padding: 2vh 2vw;
+  position: absolute;
+  z-index: 4;
+  top: 65%;
+  left: 45%;
+}
+body #secthree {
+  width: 80%;
+  height: 80vh;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #secthree #campaigns {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body #secthree #campaigns #presentation {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body #secthree #campaigns #presentation #drawing {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body #secthree #campaigns #presentation #drawing #thumbone {
+  display: block;
+  width: 45%;
+}
+body #secthree #campaigns #presentation #drawing #thumbone #photo_one {
+  display: block;
+  width: 97%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+body #secthree #campaigns #presentation #drawing #thumbone #text {
+  width: 100%;
+}
+body #secthree #campaigns #presentation #drawing #thumbone #text p {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+body #secthree #campaigns #presentation #drawing #thumbone #plus_info a {
+  color: #4BA87D;
+  font-size: 16px;
+  text-decoration: none;
+}
+body #secthree #campaigns #presentation #drawing #thumbtwo {
+  display: block;
+  width: 45%;
+}
+body #secthree #campaigns #presentation #drawing #thumbtwo #photo_two {
+  display: block;
+  width: 97%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+body #secthree #campaigns #presentation #drawing #thumbtwo #more {
+  width: 100%;
+}
+body #secthree #campaigns #presentation #drawing #thumbtwo #more p {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+body #secthree #campaigns #presentation #drawing #thumbtwo #more_two a {
+  color: #4BA87D;
+  text-decoration: none;
+  font-size: 16px;
+}
+body #secthree #campaigns #presentation #secthreetex {
+  width: 40%;
+  height: 80%;
+  margin: auto;
+}
+body #secthree #campaigns #presentation #secthreetex #titre_secthree #source {
+  color: #000000;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 44px;
+}
+body #secthree #campaigns #presentation #secthreetex #para_secthree p {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  width: 80%;
+  font-size: 19px;
+}
+body #secfour {
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #secfour #customer {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #secfour #customer #clients {
+  display: grid;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  align-items: center;
+}
+body #secfour #customer #clients #retour {
+  display: grid;
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  align-items: center;
+}
+body #secfour #customer #clients #retour #members {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+body #secfour #customer #clients #retour #members #frankie {
+  width: 32%;
+  position: relative;
+  z-index: 99;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+body #secfour #customer #clients #retour #members #frankie #pfranki img {
+  width: 100%;
+  height: 100%;
+}
+body #secfour #customer #clients #retour #members #frankie .name {
+  width: 30%;
+  position: absolute;
+  margin-top: -28%;
+  margin-left: 7%;
+  z-index: 1;
+  color: #FFFFFF;
+  font-style: "Raleway", sans-serif;
+  text-shadow: 3px 5px 2px #474747;
+  font-size: 34px;
+}
+body #secfour #customer #clients #retour #members #frankie .from {
+  width: 80%;
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 7%;
+  z-index: 2;
+  color: #FFFFFF;
+  font-style: "Raleway", sans-serif;
+  text-shadow: 3px 5px 2px #474747;
+  font-size: 19px;
+}
+body #secfour #customer #clients #retour #members #camille {
+  width: 32%;
+  position: relative;
+  z-index: 97;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+body #secfour #customer #clients #retour #members #camille #pcamille img {
+  width: 100%;
+}
+body #secfour #customer #clients #retour #members #camille .name {
+  width: 30%;
+  position: absolute;
+  margin-top: -27%;
+  margin-left: 7%;
+  z-index: 3;
+  color: #FFFFFF;
+  font-style: "Raleway", sans-serif;
+  text-shadow: 3px 5px 2px #474747;
+  font-size: 34px;
+}
+body #secfour #customer #clients #retour #members #camille .from {
+  width: 80%;
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 7%;
+  z-index: 4;
+  color: #FFFFFF;
+  font-style: "Raleway", sans-serif;
+  text-shadow: 3px 5px 2px #474747;
+  font-size: 19px;
+}
+body #secfour #customer #clients #retour #members #elayne {
+  width: 32%;
+  position: relative;
+  z-index: 95;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+body #secfour #customer #clients #retour #members #elayne #pelayne img {
+  width: 100%;
+}
+body #secfour #customer #clients #retour #members #elayne .name {
+  width: 30%;
+  position: absolute;
+  margin-top: -27%;
+  margin-left: 7%;
+  z-index: 5;
+  color: #FFFFFF;
+  font-style: "Raleway", sans-serif;
+  text-shadow: 3px 5px 2px #474747;
+  font-size: 34px;
+}
+body #secfour #customer #clients #retour #members #elayne .from {
+  width: 80%;
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 7%;
+  z-index: 6;
+  color: #FFFFFF;
+  font-style: "Raleway", sans-serif;
+  text-shadow: 3px 5px 2px #474747;
+  font-size: 19px;
+}
+body #secfour #customer #clients #rejoin_nous {
+  width: 80%;
+  height: 70%;
+  margin: auto;
+}
+body #secfour #customer #clients #rejoin_nous .bighdeux {
+  color: #000000;
+  font-family: "Playfair Display", sans-serif;
+  width: 90%;
+  height: 40%;
+  font-size: 32px;
+  margin: auto;
+  text-align: center;
+}
+body #secfour #customer #clients #rejoin_nous #entree {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+body #secfour #customer #clients #rejoin_nous #entree #saisie_email #email {
+  font-size: 21px;
+  padding: 1vh 1vw;
+}
+body #secfour #customer #clients #rejoin_nous #entree button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+body #secfour #customer #clients #rejoin_nous #entree button:active {
+  background-color: red;
+}
+body #secfour #customer #clients #rejoin_nous #hidden {
+  display: none;
+  width: 20%;
+  margin-left: 22%;
+  margin-top: 3%;
+  color: #4BA87D;
+}
+body #secfive {
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #secfive #cont_five {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #secfive #cont_five #titre_mark {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+body #secfive #cont_five #titre_mark #titre_secfive {
+  width: 80%;
+  height: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body #secfive #cont_five #titre_mark #titre_secfive .bighdeux {
+  color: #000000;
+  font-family: "Playfair Display", sans-serif;
+  align-items: center;
+  font-size: 4em;
+}
+body #secfive #cont_five #titre_mark #mark {
+  width: 100%;
+  height: 30%;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body #get_started {
+  background-color: #4BA87D;
+  width: 80vw;
+  height: 50vh;
+  margin: auto;
+}
+body #get_started #cont_start {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+body #get_started #cont_start #start_p_a_p {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+body #get_started #cont_start #start_p_a_p #started {
+  width: 80%;
+  height: 70%;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+body #get_started #cont_start #start_p_a_p #started .bighdeux {
+  color: #FFFFFF;
+  font-family: "Playfair Display", sans-serif;
+  width: 50vw;
+  text-align: center;
+  font-size: 60px;
+  margin: 0;
+}
+body #get_started #cont_start #p_a_p {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+body #get_started #cont_start #p_a_p .pick {
+  width: 20%;
+  height: 60%;
+  background-color: #FFFFFF;
+  color: #4BA87D;
+  font-family: "Raleway", sans-serif;
+  border: 2px solid #4BA87D;
+  padding: 0.55vh 0.55vw;
+  border: none;
+  padding: 1em 1em;
+}
+body #get_started #cont_start #p_a_p .pick:active {
+  background-color: red;
+}
+body footer {
+  width: 80%;
+  height: 50vh;
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+}
+body footer #foot_global {
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+body footer #foot_global #plogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  height: 20%;
+  display: flex;
+}
+body footer #foot_global #plogo .logo {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  display: block;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex-start;
+}
+body footer #foot_global #plogo comp .bighdeux {
+  color: #000000;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 26px;
+  width: 80%;
+}
+body footer #foot_global #link {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+body footer #foot_global #link #services {
+  width: 10%;
+  height: 80;
+}
+body footer #foot_global #link #services ul li {
+  list-style-type: none;
+}
+body footer #foot_global #link #services ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 19px;
+}
+body footer #foot_global #link #support {
+  width: 10%;
+  height: 80;
+}
+body footer #foot_global #link #support ul li {
+  list-style-type: none;
+}
+body footer #foot_global #link #support ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+body footer #foot_global #link #reseau {
+  width: 10%;
+  height: 80;
+}
+body footer #foot_global #link #reseau ul li {
+  list-style-type: none;
+}
+body footer #foot_global #link #reseau ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+body footer #foot_global #link #social {
+  width: 10%;
+  height: 80;
+}
+body footer #foot_global #link #social ul li {
+  list-style-type: none;
+}
+body footer #foot_global #link #social ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+body footer #legal {
+  width: 80%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+body footer #legal #copy {
+  font-size: 15px;
+}
+body footer #legal #condit a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+}
+body footer #legal #private a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+}/*# sourceMappingURL=style.css.map */
