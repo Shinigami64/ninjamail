@@ -1,15 +1,10 @@
 @mixin logo{
     color: $cpblack;
-    font-family: $flogo;
-    // width: 129px;
-    // height: 64.5px;
+    font-family: $flogo;;
     display: block;
     padding: 0;
-    // margin: center;
     background-repeat: no-repeat;
     background-size: cover;
-    // background-image: url(./assets/mail.png);
-    // background-image: url(./assets/mail.webp);
 }
 
 @mixin navbar {
@@ -22,7 +17,7 @@
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
